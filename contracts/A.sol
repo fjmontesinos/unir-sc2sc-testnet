@@ -5,7 +5,7 @@ contract A {
 	uint256 valor;
 
 	constructor() public {
-		valor = 1;
+		valor = uint256(1);
 	}
 
 	function getValor() public view returns (uint256) {

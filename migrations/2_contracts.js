@@ -6,6 +6,5 @@ module.exports = function(deployer, network, accounts) {
         .then(() => A.deployed())
         .then((instance) => {
             return deployer.deploy(B, instance.address, { from: accounts[0] });
-        });        
+        });
 };
-

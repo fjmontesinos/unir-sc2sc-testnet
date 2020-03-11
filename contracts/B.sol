@@ -4,20 +4,20 @@ import "./A.sol";
 
 contract B {
 
-	A a;	
+	A a;
 	uint256 valor2;
 
 	constructor(address aAddress) public {
 		a = A(aAddress);
-		valor2 = 2;
+		valor2 = uint256(2);
 	}
 
 	function getValorDeA() public view returns (uint256) {
-		uint256 valorDeA = a.getValor();		
+		uint256 valorDeA = a.getValor();
 		return valorDeA;
 	}
 
-	function getValorDeB() public view returns (uint256) {		
+	function getValorDeB() public view returns (uint256) {
 		return valor2;
 	}
 
